@@ -261,6 +261,20 @@
   }
   .skill-chip .cat-label{ font-size:11px; color: var(--steel-light); font-weight:500; }
 
+  /* projects */
+  .project-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; }
+  @media (max-width:900px){ .project-grid{ grid-template-columns: 1fr; } }
+  .project-card{
+    background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+    padding:20px 22px; box-shadow: 0 1px 3px rgba(16,33,63,0.04);
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .project-type{ font-size:11px; text-transform:uppercase; letter-spacing:0.06em; font-weight:700; color: var(--accent); }
+  .project-card h3{ margin:0; font-size:15.5px; color: var(--navy); line-height:1.35; }
+  .project-card p{ margin:0; font-size:13.5px; color:#33405a; line-height:1.5; }
+  .project-tags{ display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; padding-top:6px; }
+  .project-tags span{ font-size:11px; background: var(--paper-2); color: var(--navy-2); padding:4px 9px; border-radius:12px; }
+
   /* certifications */
   .cert-list{ display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; }
   @media (max-width:640px){ .cert-list{ grid-template-columns: 1fr; } }
@@ -310,6 +324,7 @@
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
     <a href="#certifications">Certifications</a>
   </div>
 </nav>
@@ -552,8 +567,33 @@
     </div>
   </section>
 
+  <section id="projects">
+    <div class="section-head reveal"><span class="num">05</span><h2>Projects</h2></div>
+    <div class="section-sub reveal">Academic and research projects spanning construction digitalisation, infrastructure risk analysis, and civil engineering design.</div>
+    <div class="project-grid reveal">
+      <div class="project-card">
+        <div class="project-type">MSc Dissertation · University of Leicester</div>
+        <h3>Challenges of Adopting Digital Technologies like AI, BIM, IoT, etc. in Construction Projects in the United Kingdom: A Multi-Criteria Decision Making (MCDM)-Based Analysis</h3>
+        <p>Reviewed literature to identify 25 distinct challenges to digital technology adoption in UK construction, grouped into five categories — economic, technical, human, sociocultural, and ethical/legal — then consulted industry experts and applied the Analytic Hierarchy Process (AHP) within an MCDM framework to rank the challenges by relative weight and produce recommendations for the sector.</p>
+        <div class="project-tags"><span>AHP</span><span>MCDM</span><span>Digital Technology Adoption</span><span>UK Construction</span></div>
+      </div>
+      <div class="project-card">
+        <div class="project-type">MSc Research Project</div>
+        <h3>Risk Analysis, Assessment &amp; Recommendations — Hinkley Point C Reactors</h3>
+        <p>Conducted a cost and risk analysis of the Hinkley Point C nuclear power project in the UK, evaluating major risk factors and cost drivers on a large-scale nuclear infrastructure programme and producing recommendations.</p>
+        <div class="project-tags"><span>Risk Analysis</span><span>Cost Assessment</span><span>Nuclear Infrastructure</span></div>
+      </div>
+      <div class="project-card">
+        <div class="project-type">BSc Civil Engineering Dissertation · Kerala University</div>
+        <h3>Development of a Live Water Distribution Network for a Rural Panchayat in Kollam District, Kerala</h3>
+        <p>Analysed and designed a water distribution network for a panchayat in Kollam district using EPANET software — modelling flow, finalising pipe diameters through iterative trials, and designing the pumping main within the software.</p>
+        <div class="project-tags"><span>EPANET</span><span>Hydraulic Modelling</span><span>Network Design</span><span>Pumping Main Design</span></div>
+      </div>
+    </div>
+  </section>
+
   <section id="certifications">
-    <div class="section-head reveal"><span class="num">05</span><h2>Certifications &amp; Professional Development</h2></div>
+    <div class="section-head reveal"><span class="num">06</span><h2>Certifications &amp; Professional Development</h2></div>
     <div class="cert-list reveal">
       <div class="cert"><div class="badge">✓</div><div><strong>CSCS White Card Holder</strong><br>United Kingdom</div></div>
       <div class="cert"><div class="badge">✓</div><div><strong>Construction Cost Estimating and Management</strong><br>2024</div></div>
